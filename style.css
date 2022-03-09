@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Outfit&display=swap');
+
+:root {
+    --soft-blue-primary: hsl(215, 51%, 70%);
+    --cyan-primary: hsl(178, 100%, 50%);
+    --bg-color: hsl(217, 54%, 11%);
+    --card-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --main-white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: 'Manrope', sans-serif;
+}
+
+.card__image, .card__content, .card__author {
+    width: 90%;
+    margin: auto;
+}
+
+.card {
+    margin: auto;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    width: 400px;
+    height: 670px;
+    background-color: var(--card-color);
+    border-radius: 25px;
+}
+
+.card__image {
+    margin: 0 auto;
+    position: relative;
+}
+
+.card__image img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+.card__image::after {
+    content: url(../images/icon-view.svg);
+    margin-top: 20px;
+    position: absolute;
+    border-radius: 20px;
+    top: 0px;
+    left: 0px;
+    padding-top: 150px;
+    text-align: center;
+    background:  rgb(0, 255, 247, 0.5);
+    width: 100%;
+    height: 54.5%;
+    opacity: 0;
+    transition: all 0.4s;
+}
+
+.card__image:hover::after {
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+.card__content {
+    margin: 0 auto;
+}
+
+.card__content h2{
+    color: var(--main-white);
+    font-weight: 900;
+    line-height: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+.card__description {
+    color: var(--soft-blue-primary);  
+    font-size: 15px;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+}
+
+.card__details {
+    width: 100%;
+    display: inline-block;
+}
+
+.card__details p {
+    margin: 0px;
+    font-size: 18px;
+}
+
+.card__details__right {
+    float:right;
+}
+
+.card__details__left, .card__details__right {
+    display: inline-block;
+}
+
+.eth__value, .time__left {
+    margin: 0 auto;
+    display: inline;
+}
+
+.eth__icon {
+    position: relative;
+    top: 3px;
+}
+
+.eth__value {
+    color: var(--cyan-primary);
+    padding-left: 4px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.time__left{
+  color: var(--soft-blue-primary);  
+  font-weight: 400;
+  padding-left: 4px;
+  letter-spacing: 1.5px;
+}
+
+.clock__icon {
+    position: relative;
+    top: 3px;
+}
+
+.divider {
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    height: 1px;
+    border-radius: 1px;
+    background-color: var(--line-color);     
+}
+
+.card__author {
+    position: relative;
+    margin-top: 20px;
+}
+
+.card__author img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.card__author__desc p{
+    position: absolute;
+    bottom: 5px;
+    padding-left: 20px;
+    color: var(--soft-blue-primary);
+}
+
+.card__author__name {
+    color:  var(--main-white);
+    letter-spacing: 1px;
+}
+
+.card__author__image, .card__author__desc {
+    display: inline-block;
+}
+
+.card__content__name:hover, .card__author__name:hover {
+    cursor: pointer;
+    color: var(--cyan-primary);
+}
+
+
+
+
+
+
