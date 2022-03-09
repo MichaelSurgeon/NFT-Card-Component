@@ -44,7 +44,7 @@ body {
 }
 
 .card__image::after {
-    content: url(../images/icon-view.svg);
+    content: url(images/icon-view.svg);
     margin-top: 20px;
     position: absolute;
     border-radius: 20px;
